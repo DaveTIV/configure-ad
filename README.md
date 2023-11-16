@@ -19,33 +19,31 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Resource Group for AD 
+- Create a Domain VM(Windows Server)
+- Create the Client VM(Windows 10)
+- Install Active Directory on Domain Server
+- Create Organizational Units and Users in AD
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4tHT0GI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there is no breeding.
+Here shows I have created a resource group "AD-Lab".
 </p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bO7mA8h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there is no breeding.
+Here I have created the Domain Controller(DC-1) and the Client VM(Client-1) under the AD resource group.
 </p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ad3EqdV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there is no breeding.
+Here I am in the DC-server pre-installing Active Directory.
 </p>
-<br />
+<img src="https://i.imgur.com/UaLpITA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+Here I have created two Organizational Units, "_ADMINS" and "_EMPLOYEES".
+</p>
+<img src="https://i.imgur.com/18jFeg2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+Here I opened Powershell ISE as an administrator, ran a script and created 100 users in AD.
